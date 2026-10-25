@@ -147,9 +147,13 @@ Replace `/ABSOLUTE/PATH/TO/` with the full path to the cloned repository.
 
 ### Step 3 — Restart Claude Desktop
 
-Fully quit Claude Desktop (system tray → Quit) and reopen it. In the new conversation, look for the hammer icon (🔨) in the chat input bar — this confirms MCP tools are loaded.
+Fully quit Claude Desktop (system tray → Quit) and reopen it.
 
-### Step 4 — Test
+### Step 4 — Verify tools are loaded
+
+In a new conversation, click the **+** button (or the connectors icon) in the chat input bar. You should see **kubernetes-observability** listed under **Integrations** or **Connected tools**. If it shows a connection error, check that the path in `args` is correct and that `npm run build` has been run.
+
+### Step 5 — Test
 
 Type: `List pods in the default namespace`
 
