@@ -1,0 +1,31 @@
+# Credentials — never commit
+.env
+*.env.local
+*.env.*.local
+.claude
+# Build output
+dist/
+build/
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/settings.json
+.idea/
+*.swp
+
+# TypeScript
+*.tsbuildinfo
+
+
+# Other
+blog

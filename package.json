@@ -1,0 +1,52 @@
+{
+  "name": "kubernetes-observability-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Kubernetes management, network debugging, and Dynatrace observability with self-monitoring via OpenTelemetry",
+  "main": "dist/index.js",
+  "author": "Muhammad Rafay",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "kubernetes",
+    "k8s",
+    "dynatrace",
+    "observability",
+    "opentelemetry",
+    "network-debugging",
+    "model-context-protocol",
+    "claude",
+    "ai-tools",
+    "otlp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrafay7655/kubernetes-observability-mcp-server.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "dependencies": {
+    "@kubernetes/client-node": "^0.21.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/exporter-logs-otlp-http": "^0.55.0",
+    "@opentelemetry/exporter-metrics-otlp-http": "^0.55.0",
+    "@opentelemetry/exporter-trace-otlp-http": "^0.55.0",
+    "@opentelemetry/resources": "^1.28.0",
+    "@opentelemetry/sdk-logs": "^0.55.0",
+    "@opentelemetry/sdk-metrics": "^1.28.0",
+    "@opentelemetry/sdk-node": "^0.55.0",
+    "@opentelemetry/sdk-trace-node": "^1.28.0",
+    "@opentelemetry/semantic-conventions": "^1.28.0",
+    "axios": "^1.7.0",
+    "dotenv": "^16.4.0",
+    "winston": "^3.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.6.0"
+  }
+}
